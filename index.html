@@ -14,41 +14,133 @@
 	</head>
 	<body class="is-preload">
 
+<!-- Progress Bar -->
+<div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+<!-- Sticky Navigation Bar -->
+<nav id="stickyNav" class="sticky-navigation">
+	<div class="sticky-nav-container">
+		<a href="#intro" class="sticky-nav-link" data-section="intro">Introduction</a>
+		<a href="#education" class="sticky-nav-link" data-section="education">Education</a>
+		<a href="#work" class="sticky-nav-link" data-section="work">Work</a>
+		<a href="#projects" class="sticky-nav-link" data-section="projects">Projects</a>
+		<a href="#skills" class="sticky-nav-link" data-section="skills">Skills</a>
+	</div>
+</nav>
+
+<!-- Back to Top Button -->
+<button id="backToTopBtn" class="back-to-top-btn" title="Back to top">
+	<i class="fas fa-chevron-up"></i>
+</button>
+
 <!-- Wrapper -->
 <div id="wrapper">
 
     <!-- Header -->
     <header id="header">
-        <div class="profile-container" style="text-align: center; margin-bottom: 15px;">
-            <img src="images/photo_professional.jpg" alt="Ashutosh Jagdale" class="profile-image" 
-                 style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #007BFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-        </div>
-        <div class="content">
-            <div class="inner">
-                <h1 style="color: #ffffff;">Ashutosh Jagdale</h1>
-				<p style="font-size: 22px; color: rgb(145, 145, 145);"><b>Software Developer</b></p>
-                <p style="font-size: 18px;">Welcome to my portfolio! Explore my work, projects and skills in Software Engineering, Machine Learning and Full-Stack Development</p>
-                </p>
-                <ul class="icons">
-					<a href="mailto:ashutosh.s.jagdale@gmail.com" class="icon fas fa-envelope" style="font-size: 22px; color: #ffffff; margin-right: 15px;"></a>
-					<a href="https://github.com/ashutosh-jagdale" class="icon brands fa-github" style="font-size: 22px; color: #ffffff; margin-right: 15px;"></a>
-					<a href="https://www.linkedin.com/in/ashutosh-jagdale/" class="icon brands fa-linkedin" style="font-size: 22px; color: #ffffff; margin-right: 15px;"></a>
-					<a href="https://leetcode.com/u/ashutosh_jagdale/" target="_blank" style="margin-right: 15px; text-decoration: none;">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width: 22px; height: 22px; filter: invert(1);">
-					</a>					
-                </ul>
+        <!-- Hero Section -->
+        <div class="header-hero">
+            <div class="profile-container hero-profile">
+                <img src="images/photo_professional.jpg" alt="Ashutosh Jagdale" class="profile-image animated-profile" 
+                     style="width: 160px; height: 160px;">
+            </div>
+            <div class="header-intro">
+                <h1 class="header-name">Ashutosh Jagdale</h1>
+                <p class="header-title">Full-Stack Software Developer</p>
+                <p class="header-description">3+ Years | MS Computer Science | 10+ Projects | AI/ML Specialist</p>
+                
+                <!-- Download CV Button -->
+                <a href="https://drive.google.com/uc?export=download&id=1fKEM6U_QycXldUAGSWidcPD61WhzQ-cz" class="cv-download-btn" title="Download Resume" target="_blank">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                
+                <!-- Social Icons -->
+                <div class="header-social">
+                    <a href="mailto:ashutosh.s.jagdale@gmail.com" class="social-icon social-icon-email" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/ashutosh-jagdale" target="_blank" class="social-icon social-icon-github" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ashutosh-jagdale/" target="_blank" class="social-icon social-icon-linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/ashutosh_jagdale/" target="_blank" class="social-icon social-icon-leetcode" title="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
             </div>
         </div>
-        
-        <!-- Navigation -->
-        <nav>
-            <ul style="font-size: 18px; line-height: 1.8;">
-                <li><a href="#intro" style="color: #007BFF;"><b>📜 Introduction</b></a></li>
-                <li><a href="#education" style="color: #007BFF;"><b>🎓 Education</b></a></li>
-                <li><a href="#work" style="color: #007BFF;"><b>💼 Work Experience</b></a></li>
-                <li><a href="#projects" style="color: #007BFF;"><b>📌 Projects</b></a></li>
-                <li><a href="#skills" style="color: #007BFF;"><b>🛠 Technical Skills</b></a></li>
-            </ul>
+
+        <div class="scroll-indicator">
+            <span>↓ Explore Sections Below</span>
+        </div>
+
+        <!-- Navigation Section -->
+        <nav class="nav-section">
+            <h3 class="nav-title">Explore My Portfolio</h3>
+            <div class="nav-cards-grid">
+                
+                <!-- Card 1: Introduction -->
+                <a href="#intro" class="nav-card intro-card">
+                    <div class="nav-card-icon">📜</div>
+                    <h3 class="nav-card-title">Introduction</h3>
+                    <p class="nav-card-description">Professional overview and key highlights</p>
+                    <div class="nav-card-meta">
+                        <span class="nav-meta-item">3+ Years Experience</span>
+                        <span class="nav-meta-item">Full-Stack Dev</span>
+                    </div>
+                    <div class="nav-card-footer">Explore →</div>
+                </a>
+
+                <!-- Card 2: Education -->
+                <a href="#education" class="nav-card education-card">
+                    <div class="nav-card-icon">🎓</div>
+                    <h3 class="nav-card-title">Education</h3>
+                    <p class="nav-card-description">Academic background and qualifications</p>
+                    <div class="nav-card-meta">
+                        <span class="nav-meta-item">2 Degrees</span>
+                        <span class="nav-meta-item">16+ Courses</span>
+                    </div>
+                    <div class="nav-card-footer">Explore →</div>
+                </a>
+
+                <!-- Card 3: Work Experience -->
+                <a href="#work" class="nav-card work-card">
+                    <div class="nav-card-icon">💼</div>
+                    <h3 class="nav-card-title">Work Experience</h3>
+                    <p class="nav-card-description">Professional career and accomplishments</p>
+                    <div class="nav-card-meta">
+                        <span class="nav-meta-item">6 Positions</span>
+                        <span class="nav-meta-item">5+ Companies</span>
+                    </div>
+                    <div class="nav-card-footer">Explore →</div>
+                </a>
+
+                <!-- Card 4: Projects -->
+                <a href="#projects" class="nav-card projects-card">
+                    <div class="nav-card-icon">📌</div>
+                    <h3 class="nav-card-title">Projects</h3>
+                    <p class="nav-card-description">Portfolio of featured work and contributions</p>
+                    <div class="nav-card-meta">
+                        <span class="nav-meta-item">10+ Projects</span>
+                        <span class="nav-meta-item">Full-Stack & ML</span>
+                    </div>
+                    <div class="nav-card-footer">Explore →</div>
+                </a>
+
+                <!-- Card 5: Technical Skills -->
+                <a href="#skills" class="nav-card skills-card">
+                    <div class="nav-card-icon">🛠</div>
+                    <h3 class="nav-card-title">Technical Skills</h3>
+                    <p class="nav-card-description">Languages, frameworks, and tools expertise</p>
+                    <div class="nav-card-meta">
+                        <span class="nav-meta-item">70+ Skills</span>
+                        <span class="nav-meta-item">8 Categories</span>
+                    </div>
+                    <div class="nav-card-footer">Explore →</div>
+                </a>
+            </div>
         </nav>
     </header>
 
@@ -57,13 +149,52 @@
 
 
 		<article id="intro">
-			<h2 class="major">📜 Introduction</h2>
-			<span class="image main"><img src="images\Portfolio_Image.JPG" alt="Ashutosh Jagdale" /></span>
+			<h2 class="major intro-heading">📜 Introduction</h2>
+			<span class="image main"><img src="images\Portfolio_Image.JPG" alt="Ashutosh Jagdale" class="intro-profile-image" style="border-radius: 10px;" /></span>
 		
-			<p style="font-size: 18px; text-align: justify;">
-				<b>Hello! I'm <span style="color: #007BFF;">Ashutosh Jagdale</span> 👨‍💻</b><br>
-				I am a <b>Master's student in Computer Science</b> at <b>Indiana University Bloomington</b>, specializing in <b>Software Engineering, Machine Learning, and Algorithms</b>. With <b>3+ years</b> of experience in full-stack development and cloud computing, I am passionate about designing <b>scalable applications</b>, optimizing system performance, and leveraging <b>AI-driven solutions</b>. 
-			</p>
+			<div class="intro-content">
+				<p style="font-size: 20px; text-align: center; margin-bottom: 10px;">
+					<b>Hello! I'm <span style="color: #007BFF;">Ashutosh Jagdale</span> 👨‍💻</b>
+				</p>
+
+				<!-- Quick Stats Card -->
+				<div class="stats-card">
+					<div class="stat-item">
+						<span class="stat-number">3+</span>
+						<span class="stat-label">Years Experience</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">M.S.</span>
+						<span class="stat-label">Computer Science</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">10+</span>
+						<span class="stat-label">Projects Completed</span>
+					</div>
+				</div>
+
+				<p style="font-size: 16px; text-align: justify; line-height: 1.8; margin-top: 20px;">
+					I am a <b>Master's student in Computer Science</b> at <b>Indiana University Bloomington</b>, specializing in cutting-edge technologies and solving complex problems.
+				</p>
+
+				<p style="font-size: 16px; margin-top: 15px; margin-bottom: 15px;">
+					<b style="font-size: 16px; color: #999;">My Specializations:</b>
+				</p>
+				<div style="margin-bottom: 20px;">
+					<span class="specialization-badge">Software Engineering</span>
+					<span class="specialization-badge">Machine Learning</span>
+					<span class="specialization-badge">Algorithms</span>
+					<span class="specialization-badge">Full-Stack Development</span>
+					<span class="specialization-badge">Cloud Computing</span>
+					<span class="specialization-badge">AI-Driven Solutions</span>
+				</div>
+
+				<p style="font-size: 16px; text-align: justify; line-height: 1.8;">
+					With <b>3+ years</b> of professional experience, I am passionate about designing <b>scalable applications</b>, optimizing system performance, and leveraging <b>AI-driven solutions</b> to create meaningful impact. My expertise spans full-stack development, cloud infrastructure, and modern software engineering practices.
+				</p>
+
+				<a href="#projects" class="cta-button">Explore My Projects →</a>
+			</div>
 		</article>
 		
 
@@ -74,28 +205,91 @@
 				My academic journey has been instrumental in shaping my technical expertise and problem-solving skills. Below is a glimpse into my educational background.
 			</p>
 		
-			<hr style="border-top: 2px solid #007BFF; margin: 20px 0;">
-		
-			<h3 style="color: #007BFF; display: flex; align-items: center; gap: 10px;">
-				<img src="images/Indiana_University_seal.svg.png" alt="Indiana University Bloomington" style="width: 50px; height: auto;"> 
-				Indiana University Bloomington
-			</h3>
-			<p style="font-size: 16px;"><b>Master of Science in Computer Science</b> <span style="color: gray;">(Fall 2023 - Spring 2025)</span></p>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Coursework:</b> Applied Algorithms, Elements of Artificial Intelligence, Applied Machine Learning, Software Engineering, Advanced Database Concepts, Computer Networks, Security for Networked Systems, Information Visualization</li>
-				<li><b>GPA:</b> 3.80 / 4.00</li>
-			</ul>
-		
-		
-			<h3 style="color: #007BFF; display: flex; align-items: center; gap: 10px;">
-				<img src="images/Savitribai_Phule_Pune_University_Logo.png" alt="Savitribai Phule Pune University" style="width: 50px; height: auto;"> 
-				Savitribai Phule Pune University
-			</h3>
-			<p style="font-size: 16px;"><b>Bachelor of Engineering in Information Technology</b> <span style="color: gray;">(Fall 2017 - Spring 2021)</span></p>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Coursework:</b> Data Structures & Algorithms, Programming Fundamentals, Computer Architecture, Computer Network, Operating Systems, Object-Oriented Programming, Distributed Systems, Machine Learning, Artificial Intelligence</li>
-				<li><b>GPA:</b> 8.77 / 10.00</li>
-			</ul>
+			<div class="education-timeline education-grid">
+				<!-- Master's Degree Card -->
+				<div class="education-card">
+					<div class="education-timeline-marker"></div>
+					
+					<span class="degree-badge masters">📚 Master's Degree</span>
+					
+					<div class="education-header">
+						<a href="https://bloomington.iu.edu/index.html" target="_blank">
+							<img src="images/Indiana_University_seal.svg.png" alt="Indiana University Bloomington" class="university-logo"> 
+							<span class="education-title">Indiana University Bloomington</span>
+						</a>
+					</div>
+					
+					<p class="education-degree">Master of Science in Computer Science</p>
+					<p class="education-period">Fall 2023 - Spring 2025</p>
+					
+					<!-- GPA Progress Bar -->
+					<div class="gpa-section">
+						<span class="gpa-label">GPA</span>
+						<div class="progress-bar-container">
+							<div class="progress-bar" style="--progress-width: 95%;">
+								3.80 / 4.00
+							</div>
+						</div>
+					</div>
+					
+					<!-- Courses Section -->
+					<div class="coursework-section">
+						<span class="courses-label">Relevant Coursework</span>
+						<div class="course-badges">
+							<span class="course-badge">Applied Algorithms</span>
+							<span class="course-badge">AI & ML</span>
+							<span class="course-badge">Software Engineering</span>
+							<span class="course-badge">Database Systems</span>
+							<span class="course-badge">Computer Networks</span>
+							<span class="course-badge">Security Systems</span>
+							<span class="course-badge">Data Visualization</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Bachelor's Degree Card -->
+				<div class="education-card">
+					<div class="education-timeline-marker"></div>
+					
+					<span class="degree-badge bachelors">📖 Bachelor's Degree</span>
+					
+					<div class="education-header">
+						<a href="https://www.unipune.ac.in/" target="_blank">
+							<img src="images/Savitribai_Phule_Pune_University_Logo.png" alt="Savitribai Phule Pune University" class="university-logo"> 
+							<span class="education-title">Savitribai Phule Pune University</span>
+						</a>
+					</div>
+					
+					<p class="education-degree">Bachelor of Engineering in Information Technology</p>
+					<p class="education-period">Fall 2017 - Spring 2021</p>
+					
+					<!-- GPA Progress Bar -->
+					<div class="gpa-section">
+						<span class="gpa-label">GPA</span>
+						<div class="progress-bar-container">
+							<div class="progress-bar" style="--progress-width: 87.7%;">
+								8.77 / 10.00
+							</div>
+						</div>
+					</div>
+					
+					<!-- Courses Section -->
+					<div class="coursework-section">
+						<span class="courses-label">Relevant Coursework</span>
+						<div class="course-badges">
+							<span class="course-badge">Data Structures</span>
+							<span class="course-badge">Algorithms</span>
+							<span class="course-badge">Computer Architecture</span>
+							<span class="course-badge">Networks</span>
+							<span class="course-badge">Operating Systems</span>
+							<span class="course-badge">OOP</span>
+							<span class="course-badge">Distributed Systems</span>
+							<span class="course-badge">Machine Learning</span>
+							<span class="course-badge">AI</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</article>	
 		
 		
@@ -105,82 +299,265 @@
 				Below is an overview of my professional experience, including my contributions to software development, teaching, and full-stack engineering.
 			</p>
 		
-			<hr style="border-top: 2px solid #007BFF; margin: 20px 0;">
+			<div class="work-timeline work-grid">
+				
+				<!-- EXL: Full Stack Data Engineer -->
+				<div class="work-card">
+					<div class="work-timeline-marker"></div>
+					
+					<span class="role-badge consultant">💼 Consultant</span>
+					
+					<div class="work-header">
+						<a href="https://www.exlservice.com/" target="_blank">
+							<img src="images/exl_logo_rgb_orange_pos_002_1.png" alt="EXL" class="company-logo"> 
+							<span class="job-title">EXL</span>
+						</a>
+					</div>
+					
+					<p class="job-position">Full Stack Data Engineer (Consultant II)</p>
+					<div class="job-meta">
+						<span class="meta-badge location-badge">Remote, USA</span>
+						<span class="meta-badge duration-badge">Sep 2025 - Present</span>
+					</div>
+					
+					<div class="responsibilities-section">
+						<span class="responsibilities-label">Key Achievements</span>
+						<ul class="responsibility-list">
+							<li>Led the development of a <b>large-scale pricing data platform</b> on <b>Palantir Foundry</b>, integrating <b>PySpark-based ETL</b>, <b>SQL data modeling</b>, and <b>20+ TypeScript REST APIs</b> to support enterprise pricing lifecycle automation and approval workflows.</li>
+							<li>Scaled and optimized <b>batch operations</b> across thousands of <b>SKU–zone combinations</b> and <b>5K+ activity objects</b>, leveraging <b>Spark tuning</b>, <b>SQL performance optimization</b>, and real-time validation systems for pricing rules and business constraints.</li>
+							<li>Architected <b>governed data infrastructure</b> with <b>ontology design</b>, <b>Object Set API</b>, and <b>MultiLink relationship management</b> to ensure <b>data lineage</b>, <b>audit logging</b>, and relationship consistency across pricing scenarios.</li>
+							<li>Implemented robust <b>business logic</b> for pricing impact calculation, activity merging/splitting, scenario linking, and approval thresholds (<b>$50K / $500K</b>), along with <b>dynamic alerting</b> using the <b>Functions API</b> to ensure compliance, accuracy, and auditability.</li>
+							<li>Enhanced <b>platform resilience</b> through <b>unit, integration, and E2E testing</b>, <b>transaction boundary optimization</b>, and debugging tools, collaborating closely with ops/product teams to meet <b>SLA targets</b> and reduce incident recovery time.</li>
+						</ul>
+					</div>
+					
+					<div class="tech-section">
+						<span class="tech-label">Tech Stack</span>
+						<div class="tech-badges">
+							<span class="tech-badge">Palantir Foundry</span>
+							<span class="tech-badge">PySpark</span>
+							<span class="tech-badge">TypeScript</span>
+							<span class="tech-badge">SQL</span>
+							<span class="tech-badge">REST APIs</span>
+						</div>
+					</div>
+				</div>
 
-			<h3 style="color: #007BFF; display: flex; align-items: center; gap: 10px;">
-				<img src="images\exl_logo_rgb_orange_pos_002_1.png" alt="EXL" style="width: 50px; height: auto;"> 
-				Full Stack Data Engineer (Consultant II) at EXL
-			</h3>
-			<p style="font-size: 16px; color: gray;">Remote, USA | Sep 2025 - Present</p>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Led the development of a <b>large-scale pricing data platform</b> on <b>Palantir Foundry</b>, integrating <b>PySpark-based ETL</b>, <b>SQL data modeling</b>, and <b>20+ TypeScript REST APIs</b> to support enterprise pricing lifecycle automation and approval workflows.</li>
-				<li>Scaled and optimized <b>batch operations</b> across thousands of <b>SKU–zone combinations</b> and <b>5K+ activity objects</b>, leveraging <b>Spark tuning</b>, <b>SQL performance optimization</b>, and real-time validation systems for pricing rules and business constraints.</li>
-				<li>Architected <b>governed data infrastructure</b> with <b>ontology design</b>, <b>Object Set API</b>, and <b>MultiLink relationship management</b> to ensure <b>data lineage</b>, <b>audit logging</b>, and relationship consistency across pricing scenarios.</li>
-				<li>Implemented robust <b>business logic</b> for pricing impact calculation, activity merging/splitting, scenario linking, and approval thresholds (<b>$50K / $500K</b>), along with <b>dynamic alerting</b> using the <b>Functions API</b> to ensure compliance, accuracy, and auditability.</li>
-				<li>Enhanced <b>platform resilience</b> through <b>unit, integration, and E2E testing</b>, <b>transaction boundary optimization</b>, and debugging tools, collaborating closely with ops/product teams to meet <b>SLA targets</b> and reduce incident recovery time.</li>
-			</ul>
+				<!-- Heartland Community Network: Senior Consultant -->
+				<div class="work-card">
+					<div class="work-timeline-marker"></div>
+					
+					<span class="role-badge fulltime">🏢 Full-Time</span>
+					
+					<div class="work-header">
+						<a href="https://www.heartlandnet.com/" target="_blank">
+							<img src="images/hoosiercommunitynetwork_logo.jpeg" alt="Heartland Community Network" class="company-logo"> 
+							<span class="job-title">Heartland Community Network</span>
+						</a>
+					</div>
+					
+					<p class="job-position">Senior Consultant</p>
+					<div class="job-meta">
+						<span class="meta-badge location-badge">Bloomington, IN</span>
+						<span class="meta-badge duration-badge">Feb 2025 - Sep 2025</span>
+					</div>
+					
+					<div class="responsibilities-section">
+						<span class="responsibilities-label">Key Achievements</span>
+						<ul class="responsibility-list">
+							<li>Led end-to-end development of a <b>graduate career platform</b> used by MSCS/MSIS students, integrating <b>Clerk-based authentication</b> and <b>role-based access control</b> for secure gated access.</li>
+							<li>Engineered <b>modular dashboards</b> and <b>protected routes</b> with React, React Router, and custom hooks; enhanced UX using <b>TailwindCSS</b> and <b>Framer Motion</b>.</li>
+							<li>Integrated <b>resume builders</b>, real-time <b>PDF preview via react-pdf</b>, ATS-optimized templates, <b>Notion embeds</b>, and job prep tools such as Yoodli, Pramp, and BlueEQ.</li>
+							<li>Developed <b>career planning workflows</b>, LinkedIn outreach templates, structured goal-setting forms, and an <b>International Student Hub</b> with visa-specific job tools.</li>
+							<li>Incorporated continuous feedback from <b>university career coaches</b> to iteratively improve usability, accessibility, and content depth across the platform.</li>
+						</ul>
+					</div>
+					
+					<div class="tech-section">
+						<span class="tech-label">Tech Stack</span>
+						<div class="tech-badges">
+							<span class="tech-badge">React</span>
+							<span class="tech-badge">React Router</span>
+							<span class="tech-badge">TailwindCSS</span>
+							<span class="tech-badge">Clerk Auth</span>
+							<span class="tech-badge">Framer Motion</span>
+							<span class="tech-badge">react-pdf</span>
+						</div>
+					</div>
+				</div>
 
-			<h3 style="color: #007BFF; display: flex; align-items: center; gap: 10px;">
-				<img src="images/hoosiercommunitynetwork_logo.jpeg" alt="Heartland Community Network" style="width: 50px; height: auto;"> 
-				Senior Consultant at Heartland Community Network
-			</h3>
-			<p style="font-size: 16px; color: gray;">Bloomington, IN | Feb 2025 - Sep 2025</p>
-			<ul>
-				<li>Led end-to-end development of a <b>graduate career platform</b> used by MSCS/MSIS students, integrating <b>Clerk-based authentication</b> and <b>role-based access control</b> for secure gated access.</li>
-				<li>Engineered <b>modular dashboards</b> and <b>protected routes</b> with React, React Router, and custom hooks; enhanced UX using <b>TailwindCSS</b> and <b>Framer Motion</b>.</li>
-				<li>Integrated <b>resume builders</b>, real-time <b>PDF preview via react-pdf</b>, ATS-optimized templates, <b>Notion embeds</b>, and job prep tools such as Yoodli, Pramp, and BlueEQ.</li>
-				<li>Developed <b>career planning workflows</b>, LinkedIn outreach templates, structured goal-setting forms, and an <b>International Student Hub</b> with visa-specific job tools.</li>
-				<li>Incorporated continuous feedback from <b>university career coaches</b> to iteratively improve usability, accessibility, and content depth across the platform.</li>
-			</ul>		
-		
-			<h3 style="color: #007BFF; display: flex; align-items: center; gap: 10px;">
-				<img src="images/Indiana_University_seal.svg.png" alt="Indiana University" style="width: 50px; height: auto;"> 
-				Graduate Teaching Assistant at Indiana University
-			</h3>
-			<p style="font-size: 16px; color: gray;">Bloomington, IN | Aug 2024 - Dec 2024</p>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Conducted <b>interactive lab sessions and office hours</b> for DSCI-D590 (Introduction to Python Programming) and CSCI-C200 (Introduction to Programming and Computers).</li>
-				<li>Designed and reviewed <b>test cases</b>, ensuring the accuracy of assessments and debugging support for students.</li>
-				<li>Provided individualized guidance on <b>programming logic, algorithm development, and debugging techniques</b>.</li>
-				<li>Collaborated with faculty and head TAs to <b>enhance course materials</b> and integrate real-world programming problems.</li>
-			</ul>
-		
-			<h3 style="color: #007BFF; display: flex; align-items: center; gap: 10px;">
-				<img src="images/hyphenova_network_logo.jpg" alt="Hyphenova" style="width: 50px; height: auto;"> 
-				Software Engineer Intern at Hyphenova
-			</h3>
-			<p style="font-size: 16px; color: gray;">Remote, USA | Jun 2024 - Aug 2024</p>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Directed design of <b>scalable user interfaces and notification systems</b> using <b>React Native</b>, achieving high responsiveness across devices.</li>
-				<li>Designed a <b>real-time leaderboard and analytics dashboard</b> using <b>HTML, JavaScript, CSS</b>, with <b>Git for version control</b> and <b>Docker for containerization</b>.</li>
-				<li>Developed <b>gamification features</b>, including a sales points system and streak maintenance, increasing user engagement and retention by <b>25%</b>.</li>
-				<li>Optimized a <b>referral program utilizing RESTful APIs</b>, increasing referrals by <b>30%</b> and enabling seamless third-party integrations.</li>
-			</ul>
-		
-			<h3 style="color: #007BFF; display: flex; align-items: center; gap: 10px;">
-				<img src="images/infosys_logo.jpg" alt="Infosys" style="width: 50px; height: auto;"> 
-				Digital Specialist Engineer (Full Stack Developer) at Infosys
-			</h3>
-			<p style="font-size: 16px; color: gray;">Pune, India | Aug 2021 - Aug 2023</p>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Executed <b>deployment activities</b> for subscription services, payment migration, and loyalty programs using <b>Java, Spring Microservices, and Angular</b>.</li>
-				<li>Integrated <b>SOAP APIs</b> for secure, transactional communication between subscription services and payment gateways, ensuring <b>ACID compliance</b>.</li>
-				<li>Developed and deployed <b>5+ CRM connectors</b> for platforms like <b>Drift, Mixpanel, and Yahoo Ads</b>, processing <b>110,000+ records</b> with <b>Adobe Experience Platform (AEP)</b>.</li>
-				<li>Engineered <b>microservice integrations</b> between CRM platforms and AEP, implementing <b>OAuth 2.0 authentication</b> and optimizing performance with <b>Apache Kafka</b>.</li>
-				<li>Led a <b>12-member Agile POD team</b>, managing cross-functional collaboration, sprint planning, and accelerating project timelines by <b>20%</b>.</li>
-				<li>Improved team efficiency and deployment speed by <b>conducting CI/CD training</b> using <b>Jenkins, AWS S3, and Terraform</b>.</li>
-			</ul>
-		
-			<h3 style="color: #007BFF; display: flex; align-items: center; gap: 10px;">
-				<img src="images/tuljai_enterprises_logo.jpg" alt="Tuljai Enterprises" style="width: 50px; height: auto;"> 
-				Software Developer Intern at Tuljai Enterprises
-			</h3>
-			<p style="font-size: 16px; color: gray;">Pune, India | Jul 2020 - Jul 2021</p>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Developed and deployed a <b>distribution model</b> using <b>Java and React</b>, reducing processing time by <b>25%</b>.</li>
-				<li>Architected a <b>scalable ERP system</b> using <b>MongoDB</b> to track and manage inventory, integrating KPIs and conducting <b>Exploratory Data Analysis (EDA)</b>.</li>
-				<li>Collaborated with a <b>team of 25+ stakeholders</b>, leveraging <b>DevOps practices</b> (Kubernetes) and <b>Python automation</b> to streamline product operations.</li>
-			</ul>
+				<!-- Indiana University: Teaching Assistant -->
+				<div class="work-card">
+					<div class="work-timeline-marker"></div>
+					
+					<span class="role-badge teacher">🎓 Teaching</span>
+					
+					<div class="work-header">
+						<a href="https://bloomington.iu.edu/" target="_blank">
+							<img src="images/Indiana_University_seal.svg.png" alt="Indiana University" class="company-logo"> 
+							<span class="job-title">Indiana University</span>
+						</a>
+					</div>
+					
+					<p class="job-position">Graduate Teaching Assistant</p>
+					<div class="job-meta">
+						<span class="meta-badge location-badge">Bloomington, IN</span>
+						<span class="meta-badge duration-badge">Aug 2024 - Dec 2024</span>
+					</div>
+					
+					<div class="responsibilities-section">
+						<span class="responsibilities-label">Key Responsibilities</span>
+						<ul class="responsibility-list">
+							<li>Conducted <b>interactive lab sessions and office hours</b> for DSCI-D590 (Introduction to Python Programming) and CSCI-C200 (Introduction to Programming and Computers).</li>
+							<li>Designed and reviewed <b>test cases</b>, ensuring the accuracy of assessments and debugging support for students.</li>
+							<li>Provided individualized guidance on <b>programming logic, algorithm development, and debugging techniques</b>.</li>
+							<li>Collaborated with faculty and head TAs to <b>enhance course materials</b> and integrate real-world programming problems.</li>
+						</ul>
+					</div>
+					
+					<div class="tech-section">
+						<span class="tech-label">Skills Taught</span>
+						<div class="tech-badges">
+							<span class="tech-badge">Python</span>
+							<span class="tech-badge">Programming Logic</span>
+							<span class="tech-badge">Algorithms</span>
+							<span class="tech-badge">Debugging</span>
+							<span class="tech-badge">Mentoring</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Hyphenova: Software Engineer Intern -->
+				<div class="work-card">
+					<div class="work-timeline-marker"></div>
+					
+					<span class="role-badge intern">🚀 Internship</span>
+					
+					<div class="work-header">
+						<a href="https://hyphenova.com/" target="_blank">
+							<img src="images/hyphenova_network_logo.jpg" alt="Hyphenova" class="company-logo"> 
+							<span class="job-title">Hyphenova</span>
+						</a>
+					</div>
+					
+					<p class="job-position">Software Engineer Intern</p>
+					<div class="job-meta">
+						<span class="meta-badge location-badge">Remote, USA</span>
+						<span class="meta-badge duration-badge">Jun 2024 - Aug 2024</span>
+					</div>
+					
+					<div class="responsibilities-section">
+						<span class="responsibilities-label">Key Achievements</span>
+						<ul class="responsibility-list">
+							<li>Directed design of <b>scalable user interfaces and notification systems</b> using <b>React Native</b>, achieving high responsiveness across devices.</li>
+							<li>Designed a <b>real-time leaderboard and analytics dashboard</b> using <b>HTML, JavaScript, CSS</b>, with <b>Git for version control</b> and <b>Docker for containerization</b>.</li>
+							<li>Developed <b>gamification features</b>, including a sales points system and streak maintenance, increasing user engagement and retention by <span class="metrics-highlight">25%</span>.</li>
+							<li>Optimized a <b>referral program utilizing RESTful APIs</b>, increasing referrals by <span class="metrics-highlight">30%</span> and enabling seamless third-party integrations.</li>
+						</ul>
+					</div>
+					
+					<div class="tech-section">
+						<span class="tech-label">Tech Stack</span>
+						<div class="tech-badges">
+							<span class="tech-badge">React Native</span>
+							<span class="tech-badge">JavaScript</span>
+							<span class="tech-badge">HTML/CSS</span>
+							<span class="tech-badge">REST APIs</span>
+							<span class="tech-badge">Docker</span>
+							<span class="tech-badge">Git</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Infosys: Digital Specialist Engineer -->
+				<div class="work-card">
+					<div class="work-timeline-marker"></div>
+					
+					<span class="role-badge fulltime">🏢 Full-Time</span>
+					
+					<div class="work-header">
+						<a href="https://www.infosys.com/" target="_blank">
+							<img src="images/infosys_logo.jpg" alt="Infosys" class="company-logo"> 
+							<span class="job-title">Infosys</span>
+						</a>
+					</div>
+					
+					<p class="job-position">Digital Specialist Engineer (Full Stack Developer)</p>
+					<div class="job-meta">
+						<span class="meta-badge location-badge">Pune, India</span>
+						<span class="meta-badge duration-badge">Aug 2021 - Aug 2023</span>
+					</div>
+					
+					<div class="responsibilities-section">
+						<span class="responsibilities-label">Key Achievements</span>
+						<ul class="responsibility-list">
+							<li>Executed <b>deployment activities</b> for subscription services, payment migration, and loyalty programs using <b>Java, Spring Microservices, and Angular</b>.</li>
+							<li>Integrated <b>SOAP APIs</b> for secure, transactional communication between subscription services and payment gateways, ensuring <b>ACID compliance</b>.</li>
+							<li>Developed and deployed <b>5+ CRM connectors</b> for platforms like <b>Drift, Mixpanel, and Yahoo Ads</b>, processing <span class="metrics-highlight">110,000+ records</span> with <b>Adobe Experience Platform (AEP)</b>.</li>
+							<li>Engineered <b>microservice integrations</b> between CRM platforms and AEP, implementing <b>OAuth 2.0 authentication</b> and optimizing performance with <b>Apache Kafka</b>.</li>
+							<li>Led a <b>12-member Agile POD team</b>, managing cross-functional collaboration, sprint planning, and accelerating project timelines by <span class="metrics-highlight">20%</span>.</li>
+							<li>Improved team efficiency and deployment speed by <b>conducting CI/CD training</b> using <b>Jenkins, AWS S3, and Terraform</b>.</li>
+						</ul>
+					</div>
+					
+					<div class="tech-section">
+						<span class="tech-label">Tech Stack</span>
+						<div class="tech-badges">
+							<span class="tech-badge">Java</span>
+							<span class="tech-badge">Spring Boot</span>
+							<span class="tech-badge">Angular</span>
+							<span class="tech-badge">SOAP APIs</span>
+							<span class="tech-badge">AEP</span>
+							<span class="tech-badge">Apache Kafka</span>
+							<span class="tech-badge">Jenkins</span>
+							<span class="tech-badge">AWS</span>
+							<span class="tech-badge">Terraform</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tuljai Enterprises: Software Developer Intern -->
+				<div class="work-card">
+					<div class="work-timeline-marker"></div>
+					
+					<span class="role-badge intern">🚀 Internship</span>
+					
+					<div class="work-header">
+						<a href="https://linkedin.com/company/tuljai-enterprises/?originalSubdomain=in" target="_blank">
+							<img src="images/tuljai_enterprises_logo.jpg" alt="Tuljai Enterprises" class="company-logo"> 
+							<span class="job-title">Tuljai Enterprises</span>
+						</a>
+					</div>
+					
+					<p class="job-position">Software Developer Intern</p>
+					<div class="job-meta">
+						<span class="meta-badge location-badge">Pune, India</span>
+						<span class="meta-badge duration-badge">Jul 2020 - Jul 2021</span>
+					</div>
+					
+					<div class="responsibilities-section">
+						<span class="responsibilities-label">Key Achievements</span>
+						<ul class="responsibility-list">
+							<li>Developed and deployed a <b>distribution model</b> using <b>Java and React</b>, reducing processing time by <span class="metrics-highlight">25%</span>.</li>
+							<li>Architected a <b>scalable ERP system</b> using <b>MongoDB</b> to track and manage inventory, integrating KPIs and conducting <b>Exploratory Data Analysis (EDA)</b>.</li>
+							<li>Collaborated with a <b>team of 25+ stakeholders</b>, leveraging <b>DevOps practices</b> (Kubernetes) and <b>Python automation</b> to streamline product operations.</li>
+						</ul>
+					</div>
+					
+					<div class="tech-section">
+						<span class="tech-label">Tech Stack</span>
+						<div class="tech-badges">
+							<span class="tech-badge">Java</span>
+							<span class="tech-badge">React</span>
+							<span class="tech-badge">MongoDB</span>
+							<span class="tech-badge">Python</span>
+							<span class="tech-badge">Kubernetes</span>
+							<span class="tech-badge">DevOps</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</article>		
 		
 		<article id="projects">
@@ -189,121 +566,320 @@
 				Here are some of the projects I have worked on, showcasing my expertise in <b>software engineering</b>, <b>full-stack development</b>, and <b>data science</b>.
 			</p>
 		
-			<hr style="border-top: 2px solid #007BFF; margin: 20px 0;">
+			<div class="projects-grid">
 
-			  <!-- NEW: Grad Career Platform -->
-  <h3 style="color: #007BFF;">🎓 Grad Career Platform</h3>
-  <ul style="font-size: 16px; line-height: 1.6;">
-    <li>A modern, full-stack <b>career services platform</b> for students and graduates to plan, prepare, and launch their careers.</li>
-    <li>Features <b>Clerk authentication</b> (sign in/up), <b>role-based routing</b> (onboarding, tools), <b>resume & cover letter templates</b>, and <b>job tools</b>.</li>
-    <li>Includes <b>career planning</b>, <b>self-assessment</b>, <b>networking & mentorship guides</b>, and an <b>International Student Hub</b> (OPT/CPT resources).</li>
-    <li>Fully deployed on <b>Vercel</b> with CI/CD from GitHub; 30+ preview deployments and active production updates.</li>
-    <li><b>Tech Stack:</b> React + Vite, React Router v6, Clerk, Tailwind CSS + shadcn/ui, Framer Motion, Vercel.</li>
-    <li>
-      <a href="https://grad-career-platform.vercel.app" target="_blank" style="color: #ffffff;">
-        <i class="fas fa-external-link-alt" style="font-size: 18px; margin-right: 5px;"></i> Live Demo
-      </a>
-      &nbsp;|&nbsp;
-      <a href="https://github.com/ashutosh-jagdale/grad-career-platform" target="_blank" style="color: #ffffff;">
-        <i class="fab fa-github" style="font-size: 18px; margin-right: 5px;"></i> Repository
-      </a>
-    </li>
-  </ul>
-  
-			<h3 style="color: #007BFF;">🚌 IndyGo Ridership PowerBI Dashboard</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Developed an <b>interactive data visualization dashboard</b> using <b>Power BI</b> for the ENGR-E 583: Information Visualization course at <b>Indiana University Bloomington</b>.</li>
-				<li>Analyzed <b>20.6 million+ ridership records (2022–2024)</b> sponsored by <b>IndyGo (Indianapolis Public Transportation Corporation)</b>.</li>
-				<li>Enabled <b>transit planners, commuters, and city officials</b> to explore ridership trends by day, week, month, and year.</li>
-				<li>Included <b>route- and stop-level insights</b>, <b>peak/off-peak analysis</b>, and <b>comparative metrics by service frequency</b>.</li>
-				<li>Refined the dashboard based on <b>stakeholder feedback</b> to improve usability and support <b>data-driven transit improvements</b>.</li>
-				<li><b>Skills:</b> Power BI, Data Visualization, Python, SQL</li>
-				<li>
-					<a href="images/Dashboard.pdf" target="_blank" style="color: #ffffff;">
-						<a href="https://github.com/ashutosh-jagdale/IndyGo-Ridership-PowerBI-Dashboard" target="_blank" style="color: #ffffff;">
-							<i class="fab fa-github" style="font-size: 18px; margin-right: 5px;"></i> IndyGo Ridership PowerBI Dashboard
+				<!-- Project 1: Grad Career Platform -->
+				<div class="project-card">
+					<span class="project-status deployed">✓ Deployed</span>
+					
+					<div class="project-header">
+						<h3 class="project-title">🎓 Grad Career Platform</h3>
+						<span class="project-type-badge fullstack">Full-Stack</span>
+					</div>
+					
+					<p class="project-description">
+						A modern, full-stack <b>career services platform</b> for students and graduates to plan, prepare, and launch their careers.
+					</p>
 
-					</a>
-				</li>
-			</ul>
+					<div class="project-features">
+						<span class="feature-item">Clerk authentication & role-based routing</span>
+						<span class="feature-item">Resume & cover letter templates</span>
+						<span class="feature-item">Career planning & self-assessment tools</span>
+						<span class="feature-item">International Student Hub with visa resources</span>
+						<span class="feature-item">30+ automated deployments on Vercel</span>
+					</div>
 
-			<h3 style="color: #007BFF;">🎬 FlickFix - Movie Booking Management System</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Developed a <b>scalable movie booking platform</b> enabling users to browse, book tickets, and manage screenings.</li>
-				<li>Implemented an <b>integrated payment gateway</b>, real-time booking updates, and multi-user roles.</li>
-				<li>Designed a <b>hybrid architecture</b> with <b>React.js</b> (frontend), <b>Node.js & Express.js</b> (backend), and <b>MongoDB</b> for efficient data management.</li>
-				<li><b>Tech Stack:</b> React.js, Node.js, Express.js, MongoDB, Redux.</li>
-				<li>
-					<a href="https://github.com/ashutosh-jagdale/Movie-Booking-Management-System" target="_blank" style="color: #ffffff;">
-						<i class="fab fa-github" style="font-size: 18px; margin-right: 5px;"></i> Movie Booking System
-					</a>
-				</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">💊 Epharmacy - Online Pharmacy</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Developed an <b>online pharmacy system</b> allowing users to search, order, and track medicines.</li>
-				<li>Engineered a <b>microservices architecture</b> with features like catalog management, shopping cart, and payments.</li>
-				<li>Implemented <b>API gateway routing</b> and centralized configuration for seamless integration.</li>
-				<li><b>Tech Stack:</b> Angular, Spring Boot, MySQL, Spring Cloud.</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">📰 Fake News Detection using Machine Learning</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Developed a <b>machine learning model</b> to detect misinformation in news articles.</li>
-				<li>Utilized classification algorithms including <b>Logistic Regression</b>, <b>Random Forest</b>, and <b>Naïve Bayes</b>.</li>
-				<li>Performed <b>feature engineering</b> for improved accuracy in classification.</li>
-				<li><b>Tech Stack:</b> Python, Machine Learning, NLP.</li>
-				<li>
-					<a href="https://github.com/ashutosh-jagdale/Fake-News-Detection-Using-Machine-Learning" target="_blank" style="color: #ffffff;">
-						<i class="fab fa-github" style="font-size: 18px; margin-right: 5px;"></i> Fake News Detection Using Machine Learning
-					</a>
-				</li>
-				<li>
-					<a href="https://irjet.net/archives/V8/i7/IRJET-V8I7712.pdf" target="_blank" style="color: #ffffff;">
-						<i class="fas fa-file-pdf" style="font-size: 18px; margin-right: 5px;"></i> IRJET Paper
-					</a>
-				</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">📦 Inventory Management System</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Designed and implemented a <b>web-based inventory management system</b> for efficient tracking.</li>
-				<li>Automated <b>data entry, tracking, and reporting</b>, reducing manual errors.</li>
-				<li>Utilized <b>MySQL</b> for structured data storage and optimized queries for fast retrieval.</li>
-				<li><b>Tech Stack:</b> JavaScript, HTML, CSS, Bootstrap, PHP, MySQL.</li>
-				<li>
-					<a href="https://github.com/ashutosh-jagdale/Inventory-Management-System" target="_blank" style="color: #ffffff;">
-						<i class="fab fa-github" style="font-size: 18px; margin-right: 5px;"></i> Inventory Management System
-					</a>
-				</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">🚆 InfyRail - Railway Management System</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Developed an <b>advanced railway management system</b> to optimize ticket bookings and railway operations.</li>
-				<li>Implemented key features such as <b>real-time booking updates</b>, secure payment processing, and admin control dashboards.</li>
-				<li>Designed a <b>microservices-based architecture</b> with <b>Spring Boot, Angular, and MySQL</b> to enhance scalability.</li>
-				<li><b>Tech Stack:</b> Spring Boot, Spring Cloud, Angular, MySQL, JWT Authentication.</li>
-				<li>
-					<a href="https://github.com/ashutosh-jagdale/InfyRail" target="_blank" style="color: #ffffff;">
-						<i class="fab fa-github" style="font-size: 18px; margin-right: 5px;"></i> InfyRail
-					</a>
-				</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">📊 Adobe Experience Platform Connector Development</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li>Integrated <b>third-party analytics tools</b> like Mixpanel with <b>Adobe Experience Platform (AEP)</b>.</li>
-				<li>Developed <b>custom schemas</b> and <b>API-based source connectors</b> to enhance data ingestion.</li>
-				<li>Implemented <b>secure authentication mechanisms</b> and <b>real-time event-based data capturing</b>.</li>
-				<li><b>Tech Stack:</b> Adobe Experience Platform (AEP), Postman, API Development.</li>
-				<li>
-					<a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/analytics/mixpanel" target="_blank" style="color: #ffffff;">
-						<i class="fas fa-link" style="font-size: 18px; margin-right: 5px;"></i> Mixpanel - Adobe Experience Platform Source Connector
-					</a>
-				</li>
-			</ul>
+					<div class="project-tech">
+						<span class="project-tech-label">Tech Stack</span>
+						<div class="project-tech-badges">
+							<span class="project-tech-badge">React</span>
+							<span class="project-tech-badge">Vite</span>
+							<span class="project-tech-badge">React Router</span>
+							<span class="project-tech-badge">Clerk</span>
+							<span class="project-tech-badge">TailwindCSS</span>
+							<span class="project-tech-badge">Framer Motion</span>
+							<span class="project-tech-badge">Vercel</span>
+						</div>
+					</div>
+
+					<div class="project-links">
+						<a href="https://grad-career-platform.vercel.app" target="_blank" class="project-link">
+							<i class="fas fa-external-link-alt"></i> Live Demo
+						</a>
+						<a href="https://github.com/ashutosh-jagdale/grad-career-platform" target="_blank" class="project-link">
+							<i class="fab fa-github"></i> Repository
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 2: IndyGo Dashboard -->
+				<div class="project-card">
+					<span class="project-status completed">✓ Completed</span>
+					
+					<div class="project-header">
+						<h3 class="project-title">🚌 IndyGo Ridership Dashboard</h3>
+						<span class="project-type-badge visualization">Visualization</span>
+					</div>
+					
+					<p class="project-description">
+						Interactive data visualization dashboard analyzing <b>20.6 million+ ridership records</b> for Indianapolis Public Transportation.
+					</p>
+
+					<div class="project-features">
+						<span class="feature-item">Real-time ridership trend analysis</span>
+						<span class="feature-item">Route & stop-level insights</span>
+						<span class="feature-item">Peak/off-peak analysis</span>
+						<span class="feature-item">Stakeholder feedback integration</span>
+						<span class="feature-item">Data-driven transit improvement support</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="project-tech-label">Tech Stack</span>
+						<div class="project-tech-badges">
+							<span class="project-tech-badge">Power BI</span>
+							<span class="project-tech-badge">Python</span>
+							<span class="project-tech-badge">SQL</span>
+							<span class="project-tech-badge">Data Analysis</span>
+						</div>
+					</div>
+
+					<div class="project-links">
+						<a href="https://github.com/ashutosh-jagdale/IndyGo-Ridership-PowerBI-Dashboard" target="_blank" class="project-link">
+							<i class="fab fa-github"></i> Repository
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 3: FlickFix -->
+				<div class="project-card">
+					<span class="project-status completed">✓ Completed</span>
+					
+					<div class="project-header">
+						<h3 class="project-title">🎬 FlickFix - Movie Booking</h3>
+						<span class="project-type-badge fullstack">Full-Stack</span>
+					</div>
+					
+					<p class="project-description">
+						Scalable movie booking platform enabling users to browse, book tickets, and manage screenings with integrated payment gateway.
+					</p>
+
+					<div class="project-features">
+						<span class="feature-item">Real-time booking updates</span>
+						<span class="feature-item">Integrated payment gateway</span>
+						<span class="feature-item">Multi-user roles support</span>
+						<span class="feature-item">Hybrid architecture design</span>
+						<span class="feature-item">Redux state management</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="project-tech-label">Tech Stack</span>
+						<div class="project-tech-badges">
+							<span class="project-tech-badge">React.js</span>
+							<span class="project-tech-badge">Node.js</span>
+							<span class="project-tech-badge">Express.js</span>
+							<span class="project-tech-badge">MongoDB</span>
+							<span class="project-tech-badge">Redux</span>
+						</div>
+					</div>
+
+					<div class="project-links">
+						<a href="https://github.com/ashutosh-jagdale/Movie-Booking-Management-System" target="_blank" class="project-link">
+							<i class="fab fa-github"></i> Repository
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 4: Epharmacy -->
+				<div class="project-card">
+					<span class="project-status completed">✓ Completed</span>
+					
+					<div class="project-header">
+						<h3 class="project-title">💊 Epharmacy - Online Pharmacy</h3>
+						<span class="project-type-badge backend">Microservices</span>
+					</div>
+					
+					<p class="project-description">
+						Online pharmacy system allowing users to search, order, and track medicines with microservices architecture.
+					</p>
+
+					<div class="project-features">
+						<span class="feature-item">Catalog management system</span>
+						<span class="feature-item">Shopping cart functionality</span>
+						<span class="feature-item">Integrated payment processing</span>
+						<span class="feature-item">API gateway routing</span>
+						<span class="feature-item">Centralized configuration</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="project-tech-label">Tech Stack</span>
+						<div class="project-tech-badges">
+							<span class="project-tech-badge">Angular</span>
+							<span class="project-tech-badge">Spring Boot</span>
+							<span class="project-tech-badge">MySQL</span>
+							<span class="project-tech-badge">Spring Cloud</span>
+							<span class="project-tech-badge">Microservices</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 5: Fake News Detection -->
+				<div class="project-card">
+					<span class="project-status published">📄 Published</span>
+					
+					<div class="project-header">
+						<h3 class="project-title">📰 Fake News Detection</h3>
+						<span class="project-type-badge ml">Machine Learning</span>
+					</div>
+					
+					<p class="project-description">
+						Machine learning model to detect misinformation in news articles with <b>advanced feature engineering</b> and multiple algorithms.
+					</p>
+
+					<div class="project-features">
+						<span class="feature-item">Logistic Regression classifier</span>
+						<span class="feature-item">Random Forest ensemble model</span>
+						<span class="feature-item">Naïve Bayes implementation</span>
+						<span class="feature-item">Advanced feature engineering</span>
+						<span class="feature-item">Published in IRJET</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="project-tech-label">Tech Stack</span>
+						<div class="project-tech-badges">
+							<span class="project-tech-badge">Python</span>
+							<span class="project-tech-badge">Scikit-Learn</span>
+							<span class="project-tech-badge">NLP</span>
+							<span class="project-tech-badge">Machine Learning</span>
+						</div>
+					</div>
+
+					<div class="project-links">
+						<a href="https://github.com/ashutosh-jagdale/Fake-News-Detection-Using-Machine-Learning" target="_blank" class="project-link">
+							<i class="fab fa-github"></i> Code
+						</a>
+						<a href="https://irjet.net/archives/V8/i7/IRJET-V8I7712.pdf" target="_blank" class="project-link">
+							<i class="fas fa-file-pdf"></i> Paper
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 6: Inventory Management -->
+				<div class="project-card">
+					<span class="project-status completed">✓ Completed</span>
+					
+					<div class="project-header">
+						<h3 class="project-title">📦 Inventory Management System</h3>
+						<span class="project-type-badge web">Web App</span>
+					</div>
+					
+					<p class="project-description">
+						Web-based inventory management system with automated data entry, tracking, and reporting capabilities.
+					</p>
+
+					<div class="project-features">
+						<span class="feature-item">Automated data entry & tracking</span>
+						<span class="feature-item">Real-time reporting system</span>
+						<span class="feature-item">Error reduction automation</span>
+						<span class="feature-item">Optimized database queries</span>
+						<span class="feature-item">Fast data retrieval</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="project-tech-label">Tech Stack</span>
+						<div class="project-tech-badges">
+							<span class="project-tech-badge">JavaScript</span>
+							<span class="project-tech-badge">HTML/CSS</span>
+							<span class="project-tech-badge">Bootstrap</span>
+							<span class="project-tech-badge">PHP</span>
+							<span class="project-tech-badge">MySQL</span>
+						</div>
+					</div>
+
+					<div class="project-links">
+						<a href="https://github.com/ashutosh-jagdale/Inventory-Management-System" target="_blank" class="project-link">
+							<i class="fab fa-github"></i> Repository
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 7: InfyRail -->
+				<div class="project-card">
+					<span class="project-status completed">✓ Completed</span>
+					
+					<div class="project-header">
+						<h3 class="project-title">🚆 InfyRail - Railway Management</h3>
+						<span class="project-type-badge fullstack">Full-Stack</span>
+					</div>
+					
+					<p class="project-description">
+						Advanced railway management system optimizing ticket bookings and railway operations with microservices architecture.
+					</p>
+
+					<div class="project-features">
+						<span class="feature-item">Real-time booking updates</span>
+						<span class="feature-item">Secure payment processing</span>
+						<span class="feature-item">Admin dashboards</span>
+						<span class="feature-item">JWT authentication</span>
+						<span class="feature-item">Scalable microservices design</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="project-tech-label">Tech Stack</span>
+						<div class="project-tech-badges">
+							<span class="project-tech-badge">Spring Boot</span>
+							<span class="project-tech-badge">Spring Cloud</span>
+							<span class="project-tech-badge">Angular</span>
+							<span class="project-tech-badge">MySQL</span>
+							<span class="project-tech-badge">JWT Auth</span>
+						</div>
+					</div>
+
+					<div class="project-links">
+						<a href="https://github.com/ashutosh-jagdale/InfyRail" target="_blank" class="project-link">
+							<i class="fab fa-github"></i> Repository
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 8: Adobe AEP Connectors -->
+				<div class="project-card">
+					<span class="project-status deployed">✓ Deployed</span>
+					
+					<div class="project-header">
+						<h3 class="project-title">📊 AEP Connector Development</h3>
+						<span class="project-type-badge backend">Backend</span>
+					</div>
+					
+					<p class="project-description">
+						Integrated third-party analytics tools with Adobe Experience Platform with custom schemas and API-based connectors.
+					</p>
+
+					<div class="project-features">
+						<span class="feature-item">Third-party integrations (Mixpanel, etc.)</span>
+						<span class="feature-item">Custom schema development</span>
+						<span class="feature-item">API-based source connectors</span>
+						<span class="feature-item">Secure authentication mechanisms</span>
+						<span class="feature-item">Real-time event data capturing</span>
+					</div>
+
+					<div class="project-tech">
+						<span class="project-tech-label">Tech Stack</span>
+						<div class="project-tech-badges">
+							<span class="project-tech-badge">Adobe AEP</span>
+							<span class="project-tech-badge">Postman</span>
+							<span class="project-tech-badge">API Development</span>
+							<span class="project-tech-badge">REST</span>
+						</div>
+					</div>
+
+					<div class="project-links">
+						<a href="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/analytics/mixpanel" target="_blank" class="project-link">
+							<i class="fas fa-link"></i> AEP Connector
+						</a>
+					</div>
+				</div>
+
+			</div>
 		</article>		
 
 		<article id="skills">
@@ -312,108 +888,273 @@
 				Below is a comprehensive list of my core technical skills across software development, machine learning, cloud computing, and DevOps.
 			</p>
 		
-			<hr style="border-top: 2px solid #007BFF; margin: 20px 0;">
-		
-			<h3 style="color: #007BFF;">💻 Programming Languages</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Proficient</b>: Python, Java, JavaScript, TypeScript, C++, SQL, HTML & CSS</li>
-				<li><b>Familiar</b>: Kotlin, Swift, Go, PHP, Shell Scripting, R</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">🗄️ Databases & Storage</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Relational</b>: MySQL, PostgreSQL, MS SQL Server</li>
-				<li><b>NoSQL</b>: MongoDB, AWS DynamoDB</li>
-				<li><b>Big Data & Analytics</b>: Google BigQuery, Apache Kafka</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">⚙️ Frameworks & Web Technologies</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Backend</b>: Spring Boot, Django, Flask, FastAPI, Node.js, Express.js</li>
-				<li><b>Frontend</b>: React.js, Angular, Next.js</li>
-				<li><b>API Development</b>: RESTful APIs, GraphQL</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">☁️ Cloud & DevOps</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Cloud Platforms</b>: AWS (Lambda, S3, CloudWatch, EC2, RDS), GCP (BigQuery, Cloud Functions), Microsoft Azure</li>
-				<li><b>DevOps & CI/CD</b>: Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, AWS CodePipeline</li>
-				<li><b>Infrastructure as Code</b>: Terraform, CloudFormation</li>
-				<li><b>Monitoring & Logging</b>: Prometheus, Grafana, AWS CloudWatch</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">🤖 Machine Learning & AI</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Libraries</b>: PyTorch, TensorFlow, Scikit-Learn</li>
-				<li><b>Natural Language Processing (NLP)</b>: Hugging Face Transformers</li>
-				<li><b>AI Architectures</b>: LLMs, Retrieval Augmented Generation (RAG)</li>
-				<li><b>Computer Vision</b>: OpenCV, YOLO, TensorFlow Object Detection</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">🧠 AI Tools & Platforms</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Platforms</b>: OpenAI API, Hugging Face, LangChain, Pinecone</li>
-				<li><b>Use Cases</b>: LLM-based assistants, RAG, document parsing, prompt engineering</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">📄 Document Processing</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>PDF Tools</b>: React-PDF, pdf-lib, PyPDF2</li>
-				<li><b>Resume/Report Generation</b>: HTML-to-PDF, React-PDF, LaTeX (basic)</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">🎨 UI & Design Systems</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Styling</b>: Tailwind CSS, Bootstrap, SCSS</li>
-				<li><b>Animation & UX</b>: Framer Motion, ShadCN/UI, Chakra UI</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">📊 Visualization & BI Tools</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Data Visualization</b>: Matplotlib, Seaborn, Plotly</li>
-				<li><b>BI Tools</b>: Tableau, Power BI, Google Data Studio</li>
-			</ul>
-		
-			<h3 style="color: #007BFF;">🔧 Version Control & Collaboration</h3>
-			<ul style="font-size: 16px; line-height: 1.6;">
-				<li><b>Version Control</b>: Git, GitHub, GitLab, Bitbucket</li>
-				<li><b>Project Management</b>: JIRA, Confluence, Trello</li>
-			</ul>
-		</article>		
+			<!-- Skill Search/Filter -->
+			<div class="skills-search-container">
+				<input type="text" id="skillSearchInput" class="skill-search-input" placeholder="🔍 Search skills (e.g., Python, React, AWS)...">
+				<div class="search-hint">Start typing to filter skills</div>
+			</div>
 
-						<!-- Contact -->
-							<!-- <article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-								</ul>
-							</article> -->
+			<div class="skills-grid" id="skillsGrid">
 
-						<!-- Elements -->
+				<!-- Skill Card 1: Programming Languages -->
+				<div class="skill-card">
+					<div class="skill-card-header">
+						<span>💻</span>
+						<h3 class="skill-category-title">Programming Languages</h3>
+					</div>
+					
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Proficient</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">Python</span>
+							<span class="skill-tag proficient">Java</span>
+							<span class="skill-tag proficient">JavaScript</span>
+							<span class="skill-tag proficient">TypeScript</span>
+							<span class="skill-tag proficient">C++</span>
+							<span class="skill-tag proficient">SQL</span>
+							<span class="skill-tag proficient">HTML & CSS</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🟣 Familiar</span>
+						<div class="skill-tags">
+							<span class="skill-tag familiar">Kotlin</span>
+							<span class="skill-tag familiar">Swift</span>
+							<span class="skill-tag familiar">Go</span>
+							<span class="skill-tag familiar">PHP</span>
+							<span class="skill-tag familiar">Shell Scripting</span>
+							<span class="skill-tag familiar">R</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Skill Card 2: Databases & Storage -->
+				<div class="skill-card">
+					<div class="skill-card-header">
+						<span>🗄️</span>
+						<h3 class="skill-category-title">Databases & Storage</h3>
+					</div>
+					
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Relational</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">MySQL</span>
+							<span class="skill-tag proficient">PostgreSQL</span>
+							<span class="skill-tag proficient">MS SQL Server</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 NoSQL</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">MongoDB</span>
+							<span class="skill-tag proficient">AWS DynamoDB</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Big Data & Analytics</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">Google BigQuery</span>
+							<span class="skill-tag proficient">Apache Kafka</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Skill Card 3: Frameworks & Web Technologies -->
+				<div class="skill-card">
+					<div class="skill-card-header">
+						<span>⚙️</span>
+						<h3 class="skill-category-title">Frameworks & Web</h3>
+					</div>
+					
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Backend</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">Spring Boot</span>
+							<span class="skill-tag proficient">Django</span>
+							<span class="skill-tag proficient">Flask</span>
+							<span class="skill-tag proficient">FastAPI</span>
+							<span class="skill-tag proficient">Node.js</span>
+							<span class="skill-tag proficient">Express.js</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Frontend</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">React.js</span>
+							<span class="skill-tag proficient">Angular</span>
+							<span class="skill-tag proficient">Next.js</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 API Development</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">REST APIs</span>
+							<span class="skill-tag proficient">GraphQL</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Skill Card 4: Cloud & DevOps -->
+				<div class="skill-card">
+					<div class="skill-card-header">
+						<span>☁️</span>
+						<h3 class="skill-category-title">Cloud & DevOps</h3>
+					</div>
+					
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Cloud Platforms</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">AWS</span>
+							<span class="skill-tag proficient">GCP</span>
+							<span class="skill-tag proficient">Azure</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 DevOps & CI/CD</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">Docker</span>
+							<span class="skill-tag proficient">Kubernetes</span>
+							<span class="skill-tag proficient">Terraform</span>
+							<span class="skill-tag proficient">Jenkins</span>
+							<span class="skill-tag proficient">GitHub Actions</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🟣 Monitoring & Logging</span>
+						<div class="skill-tags">
+							<span class="skill-tag familiar">Prometheus</span>
+							<span class="skill-tag familiar">Grafana</span>
+							<span class="skill-tag familiar">CloudWatch</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Skill Card 5: Machine Learning & AI -->
+				<div class="skill-card">
+					<div class="skill-card-header">
+						<span>🤖</span>
+						<h3 class="skill-category-title">ML & AI</h3>
+					</div>
+					
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Libraries</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">PyTorch</span>
+							<span class="skill-tag proficient">TensorFlow</span>
+							<span class="skill-tag proficient">Scikit-Learn</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 NLP & Vision</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">Hugging Face</span>
+							<span class="skill-tag proficient">OpenCV</span>
+							<span class="skill-tag proficient">YOLO</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🟣 AI Architectures</span>
+						<div class="skill-tags">
+							<span class="skill-tag familiar">LLMs</span>
+							<span class="skill-tag familiar">RAG</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Skill Card 6: AI Tools & Platforms -->
+				<div class="skill-card">
+					<div class="skill-card-header">
+						<span>🧠</span>
+						<h3 class="skill-category-title">AI Tools & Platforms</h3>
+					</div>
+					
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Platforms</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">OpenAI API</span>
+							<span class="skill-tag proficient">Hugging Face</span>
+							<span class="skill-tag proficient">LangChain</span>
+							<span class="skill-tag proficient">Pinecone</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Use Cases</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">LLM Assistants</span>
+							<span class="skill-tag proficient">RAG Systems</span>
+							<span class="skill-tag proficient">Prompt Engineering</span>
+							<span class="skill-tag proficient">Doc Parsing</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Skill Card 7: UI & Design Systems -->
+				<div class="skill-card">
+					<div class="skill-card-header">
+						<span>🎨</span>
+						<h3 class="skill-category-title">UI & Design</h3>
+					</div>
+					
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Styling</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">Tailwind CSS</span>
+							<span class="skill-tag proficient">Bootstrap</span>
+							<span class="skill-tag proficient">SCSS</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Animation & UX</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">Framer Motion</span>
+							<span class="skill-tag proficient">ShadCN/UI</span>
+							<span class="skill-tag proficient">Chakra UI</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Skill Card 8: Dev Tools & Collaboration -->
+				<div class="skill-card">
+					<div class="skill-card-header">
+						<span>🔧</span>
+						<h3 class="skill-category-title">Dev Tools & Collab</h3>
+					</div>
+					
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Version Control</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">Git</span>
+							<span class="skill-tag proficient">GitHub</span>
+							<span class="skill-tag proficient">GitLab</span>
+							<span class="skill-tag proficient">Bitbucket</span>
+						</div>
+					</div>
+
+					<div class="skill-section">
+						<span class="skill-level-label">🔵 Project Management</span>
+						<div class="skill-tags">
+							<span class="skill-tag proficient">JIRA</span>
+							<span class="skill-tag proficient">Confluence</span>
+							<span class="skill-tag proficient">Trello</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</article>
+
+		<!-- Elements -->
 							<article id="elements">
 								<h2 class="major">Elements</h2>
 
@@ -609,11 +1350,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										<div class="fields">
 											<div class="field half">
 												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Tanmay Mahindrakar" />
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Ashutosh Jagdale" />
 											</div>
 											<div class="field half">
 												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="mahind@iu.edu" placeholder="tmahind@iu.edu" />
+												<input type="email" name="demo-email" id="demo-email" value="ashutosh.s.jagdale@gmail.com" placeholder="ashutosh.s.jagdale@gmail.com" />
 											</div>
 											<div class="field">
 												<label for="demo-category">Category</label>
@@ -672,6 +1413,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script src="assets/js/scroll-animations.js"></script>
+		<script src="assets/js/skills-enhanced.js"></script>
+		<script src="assets/js/navigation-ux.js"></script>
 
 	</body>
+
 </html>
