@@ -6,28 +6,30 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (!searchInput || !skillsGrid) return;
 
-    // Skill data with experience levels
+    // Skill data with experience levels and example projects
     const skillsData = {
-        'Python': { years: '3+', category: 'Programming Languages', level: 'expert' },
-        'Java': { years: '3+', category: 'Programming Languages', level: 'expert' },
-        'JavaScript': { years: '2+', category: 'Programming Languages', level: 'expert' },
-        'TypeScript': { years: '2+', category: 'Programming Languages', level: 'expert' },
+        'Python': { years: '3+', category: 'Programming Languages', level: 'expert', projects: ['Data Pipeline', 'NLP Assistant'] },
+        'Java': { years: '3+', category: 'Programming Languages', level: 'expert', projects: ['Enterprise API'] },
+        'JavaScript': { years: '2+', category: 'Programming Languages', level: 'expert', projects: ['Client Dashboard'] },
+        'TypeScript': { years: '2+', category: 'Programming Languages', level: 'expert', projects: ['Admin UI'] },
         'C++': { years: '1+', category: 'Programming Languages', level: 'expert' },
-        'SQL': { years: '3+', category: 'Programming Languages', level: 'expert' },
+        'SQL': { years: '3+', category: 'Programming Languages', level: 'expert', projects: ['Reporting DB'] },
         'HTML & CSS': { years: '2+', category: 'Programming Languages', level: 'expert' },
         'Kotlin': { years: '1+', category: 'Programming Languages', level: 'intermediate' },
         'Swift': { years: '0.5+', category: 'Programming Languages', level: 'beginner' },
         'Go': { years: '1+', category: 'Programming Languages', level: 'intermediate' },
-        'React.js': { years: '2+', category: 'Frameworks & Web', level: 'expert' },
+        'React.js': { years: '2+', category: 'Frameworks & Web', level: 'expert', projects: ['SPA Analytics', 'Interactive Charts'] },
         'Angular': { years: '1.5+', category: 'Frameworks & Web', level: 'expert' },
         'Spring Boot': { years: '2+', category: 'Frameworks & Web', level: 'expert' },
         'Django': { years: '1.5+', category: 'Frameworks & Web', level: 'expert' },
-        'AWS': { years: '2+', category: 'Cloud & DevOps', level: 'expert' },
+        'AWS': { years: '2+', category: 'Cloud & DevOps', level: 'expert', projects: ['Platform Infra'] },
         'Docker': { years: '2+', category: 'Cloud & DevOps', level: 'expert' },
         'Kubernetes': { years: '1+', category: 'Cloud & DevOps', level: 'intermediate' },
         'MySQL': { years: '3+', category: 'Databases & Storage', level: 'expert' },
         'MongoDB': { years: '2+', category: 'Databases & Storage', level: 'expert' },
-        'PostgreSQL': { years: '1.5+', category: 'Databases & Storage', level: 'expert' }
+        'PostgreSQL': { years: '1.5+', category: 'Databases & Storage', level: 'expert' },
+        'TensorFlow': { years: '1.5+', category: 'ML & AI', level: 'expert', projects: ['Image Classifier'] },
+        'OpenAI API': { years: '1+', category: 'AI Tools & Platforms', level: 'expert', projects: ['Assistant Integrations'] }
     };
 
     // Initialize search functionality
@@ -101,14 +103,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Add data attributes for experience
                 tag.setAttribute('data-experience', skillData.years + ' exp');
                 
-                // Add proficiency level
-                if (tag.classList.contains('proficient')) {
-                    tag.setAttribute('data-proficiency', 'Expert');
-                } else {
-                    tag.setAttribute('data-proficiency', 'Familiar');
-                }
 
-                // Add click handler for more info
+                // Add proficiency level using canonical level in skillsData (Expert/Intermediate/Beginner)
+                const level = (skillData.level || 'intermediate').toLowerCase();
+                const levelLabel = level.charAt(0).toUpperCase() + level.slice(1);
+                tag.setAttribute('data-proficiency', levelLabel);
+
+                // Insert visual proficiency bar inside tag
+                const proficiencyMap = { expert: '100%', intermediate: '60%', beginner: '30%' };
+                const barWidth = proficiencyMap[level] || '50%';
+                const barWrap = document.createElement('div');
+                barWrap.className = 'skill-proficiency-bar';
+                const barInner = document.createElement('div');
+                barInner.className = 'skill-proficiency-level';
+                barInner.style.width = barWidth;
+                barWrap.appendChild(barInner);
+                tag.appendChild(barWrap);
+
+                // Add click handler for more info (includes related projects if available)
                 tag.style.cursor = 'pointer';
                 tag.addEventListener('click', function(e) {
                     showSkillDetails(skillName, skillData);
@@ -139,11 +151,22 @@ document.addEventListener('DOMContentLoaded', function() {
             box-shadow: 0px 8px 24px rgba(0, 150, 255, 0.3);
         `;
         
+        // Build projects list if available
+        let projectsHTML = '';
+        if (skillData.projects && skillData.projects.length) {
+            projectsHTML = `<div style="margin-top:8px;"><strong>Projects:</strong><ul style="margin:6px 0 0 18px;padding:0;">` +
+                skillData.projects.map(p => `<li style="margin-bottom:4px;">${p}</li>`).join('') +
+                `</ul></div>`;
+        }
+
         tooltip.innerHTML = `
-            <strong>${skillName}</strong><br>
-            Experience: ${skillData.years}<br>
-            Category: ${skillData.category}<br>
-            Level: ${skillData.level.charAt(0).toUpperCase() + skillData.level.slice(1)}
+            <strong>${skillName}</strong>
+            <div style="font-size:13px;margin-top:6px;line-height:1.4;">
+                <div>Experience: <strong>${skillData.years}</strong></div>
+                <div>Category: <strong>${skillData.category}</strong></div>
+                <div>Level: <strong>${skillData.level.charAt(0).toUpperCase() + skillData.level.slice(1)}</strong></div>
+            </div>
+            ${projectsHTML}
         `;
 
         document.body.appendChild(tooltip);
