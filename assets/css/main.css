@@ -2896,23 +2896,22 @@ input, select, textarea {
 @media (max-width: 768px) {
 	.education-grid {
 		margin-left: 0;
-		padding-left: 24px;
+		padding-left: 0;
+		width: 100%;
 	}
 
 	.education-timeline-marker {
-		left: 10px;
+		left: 12px;
+	}
+
+	.education-card {
+		margin: 30px 0;
+		padding-left: 20px;
 	}
 }
 
 .education-grid {
 	position: relative;
-}
-
-@media (max-width: 768px) {
-	.education-card {
-		margin: 30px 0;
-		padding-left: 16px;
-	}
 }
 
 /* Enhanced Work Experience Section Styles */
@@ -3219,28 +3218,27 @@ input, select, textarea {
 @media (max-width: 768px) {
 	.work-grid {
 		margin-left: 0;
-		padding-left: 24px;
+		padding-left: 0;
+		width: 100%;
 	}
 
 	.work-timeline-marker {
-		left: 10px;
+		left: 12px;
 	}
 
 	.job-meta {
 		flex-direction: column;
 		gap: 8px;
 	}
+
+	.work-card {
+		margin: 30px 0;
+		padding-left: 20px;
+	}
 }
 
 .work-grid {
 	position: relative;
-}
-
-@media (max-width: 768px) {
-	.work-card {
-		margin: 30px 0;
-		padding-left: 16px;
-	}
 }
 
 /* Enhanced Projects Section Styles */
