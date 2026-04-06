@@ -2484,11 +2484,49 @@ input, select, textarea {
 }
 
 .intro-profile-image {
+	border-radius: 10px;
+	object-fit: cover;
+	max-width: 100%;
+	display: block;
 	animation: profileImagePulse 3s ease-in-out infinite;
 }
 
 .intro-heading {
 	animation: slideInDown 0.8s ease-out;
+}
+
+.intro-welcome,
+.intro-text,
+.intro-subtitle,
+.section-text {
+	margin-top: 0;
+	margin-bottom: 20px;
+	line-height: 1.8;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.intro-welcome {
+	font-size: 1.15rem;
+	text-align: center;
+}
+
+.intro-subtitle {
+	font-size: 0.95rem;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 600;
+	text-align: center;
+}
+
+.highlight-name {
+	color: #007BFF;
+}
+
+.specializations-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 20px;
 }
 
 .intro-content {
@@ -2857,7 +2895,8 @@ input, select, textarea {
 
 @media (max-width: 768px) {
 	.education-grid {
-		margin-left: 60px;
+		margin-left: 0;
+		padding-left: 60px;
 	}
 
 	.education-timeline-marker {
@@ -2871,7 +2910,8 @@ input, select, textarea {
 
 @media (max-width: 768px) {
 	.education-card {
-		margin-left: 30px;
+		margin: 30px 0;
+		padding-left: 20px;
 	}
 }
 
