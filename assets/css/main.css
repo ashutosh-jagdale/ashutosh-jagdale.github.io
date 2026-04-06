@@ -2896,11 +2896,11 @@ input, select, textarea {
 @media (max-width: 768px) {
 	.education-grid {
 		margin-left: 0;
-		padding-left: 40px;
+		padding-left: 24px;
 	}
 
 	.education-timeline-marker {
-		left: 20px;
+		left: 10px;
 	}
 }
 
@@ -2911,7 +2911,7 @@ input, select, textarea {
 @media (max-width: 768px) {
 	.education-card {
 		margin: 30px 0;
-		padding-left: 20px;
+		padding-left: 16px;
 	}
 }
 
@@ -3219,11 +3219,11 @@ input, select, textarea {
 @media (max-width: 768px) {
 	.work-grid {
 		margin-left: 0;
-		padding-left: 40px;
+		padding-left: 24px;
 	}
 
 	.work-timeline-marker {
-		left: 20px;
+		left: 10px;
 	}
 
 	.job-meta {
@@ -3239,7 +3239,7 @@ input, select, textarea {
 @media (max-width: 768px) {
 	.work-card {
 		margin: 30px 0;
-		padding-left: 20px;
+		padding-left: 16px;
 	}
 }
 
